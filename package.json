@@ -1,0 +1,34 @@
+{
+  "name": "react-web-project",
+  "version": "0.1.0",
+  "author": "lidengkai <lidengkai9487@163.com>",
+  "private": true,
+  "sideEffects": [
+    "./src/main.tsx",
+    "*.less"
+  ],
+  "scripts": {
+    "start": "npm run do:watch",
+    "dev": "npm run do:build --env_dev",
+    "test": "npm run do:build --env_test",
+    "prod": "npm run do:build",
+    "do:watch": "webpack server --config build/watch.js",
+    "do:build": "webpack --config build/build.js --progress",
+    "tsc": "tsc --watch"
+  },
+  "main": "",
+  "description": "",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/lidengkai/react-web-project.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitee.com/lidengkai/react-web-project/issues"
+  },
+  "homepage": "https://gitee.com/lidengkai/react-web-project",
+  "dependencies": {
+    "antd": "~5.5.1"
+  }
+}
